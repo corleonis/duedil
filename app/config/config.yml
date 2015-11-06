@@ -9,8 +9,8 @@ parameters:
     locale: en
 
     # GitHub authentication credentials
-    github.username: "corleonis"
-    github.token: "4b60721d86b166245c509100645f23dcb0b2abcb"
+    github.username: "USERNAME_REPLACE_ME"
+    github.token: "TOKEN_REPLACE_ME"
 
     # HTTP request max items per page
     request.max_items_per_page: 200
