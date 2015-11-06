@@ -1,0 +1,3 @@
+duedil_git_mapper_homepage:
+    path:     /gitPath/{userOne}/{userTwo}
+    defaults: { _controller: DuedilGitMapperBundle:Default:index }

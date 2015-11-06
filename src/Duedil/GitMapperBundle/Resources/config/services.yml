@@ -1,0 +1,20 @@
+services:
+  guzzle.client:
+    class: GuzzleHttp\Client
+
+  packagist.client:
+    class: Packagist\Api\Client
+
+  apc_cache:
+    class: Doctrine\Common\Cache\ApcCache
+
+  git_mapper.service:
+    class: Duedil\GitMapperBundle\Service\GitMapperService
+    arguments:
+      - @packagist.client
+      - @guzzle.client
+      - @jms_serializer
+      - @apc_cache
+      - %github.username%
+      - %github.token%
+      - %request.max_items_per_page%]

@@ -1,0 +1,7 @@
+duedil_git_mapper:
+    resource: "@DuedilGitMapperBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
